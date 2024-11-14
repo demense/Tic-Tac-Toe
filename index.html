@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <button type="button" class="new-game">New Game</button>
+    <dialog>
+      <form>
+        <div class="player-one-name">
+          <label for="player-one-name">Player One Name:</label>
+          <input required type="text" id="player-one-name" />
+        </div>
+        <div class="player-two-name">
+          <label for="player-two-name">Player Two Name:</label>
+          <input required type="text" id="player-two-name" />
+        </div>
+          <p class="players-mark">Player One Is "X"</p>
+          <p class="players-mark">Player Two Is "O"</p>
+          <p class="goes-first">Player One Goes First</p>
+        <button type="button" class="lets-play">Let's Play</button>
+      </form>
+    </dialog>
+    <p class="turn"></p>
+    <div class="board">
+      <div class="cell right-column bottom-row" data-index="0"></div>
+      <div class="cell bottom-row" data-index="1"></div>
+      <div class="cell left-column bottom-row" data-index="2"></div>
+      <div class="cell right-column" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell left-column" data-index="5"></div>
+      <div class="cell right-column top-row" data-index="6"></div>
+      <div class="cell top-row" data-index="7"></div>
+      <div class="cell left-column top-row" data-index="8"></div>
+    </div>
+  </body>
+</html>
